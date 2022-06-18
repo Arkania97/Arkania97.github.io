@@ -1,3 +1,54 @@
+.header {
+  z-index: 1; }
+  .header nav .navbar-container .navbar-brand {
+    font-family: 'Courgette', cursive;
+    font-size: 3rem;
+    color: #fff;
+    font-size: 2.5rem;
+    transition: .3s; }
+    .header nav .navbar-container .navbar-brand:hover {
+      color: #ee6f07; }
+  .header nav .navbar-container .collapse .navbar-nav .dropdown .nav-link {
+    font-family: 'poppins', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    color: #fff;
+    transition: .3s; }
+    .header nav .navbar-container .collapse .navbar-nav .dropdown .nav-link:hover {
+      color: #ee6f07; }
+  .header nav .navbar-container .collapse .navbar-nav .dropdown .dropdown-menu {
+    min-width: 150px;
+    background-color: rgba(35, 33, 33, 0.73); }
+    .header nav .navbar-container .collapse .navbar-nav .dropdown .dropdown-menu li > a {
+      font-family: 'poppins', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 500;
+      color: #fff;
+      transition: .3s; }
+      .header nav .navbar-container .collapse .navbar-nav .dropdown .dropdown-menu li > a:hover {
+        color: #ff3401; }
+  .header nav .navbar-container .collapse .navbar-nav .socialmedia-box {
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+    .header nav .navbar-container .collapse .navbar-nav .socialmedia-box a > i {
+      color: #fff;
+      transition: .3s;
+      font-size: 1.5rem;
+      align-self: end; }
+      .header nav .navbar-container .collapse .navbar-nav .socialmedia-box a > i:hover {
+        color: #ff3401;
+        transform: scale(1.5); }
+  .header nav .navbar-container .collapse form button {
+    color: #ee6f07;
+    border: 1px solid #ee6f07;
+    transition: .3s; }
+    .header nav .navbar-container .collapse form button:hover {
+      color: #ff3401;
+      border: 1px solid #ff3401; }
+
 .body__index {
   width: 100%;
   height: 100vh;
@@ -46,13 +97,13 @@
         background-attachment: fixed;
         background-size: cover; }
         .body__index .grid__container .main__container .carousel .carousel-inner .carousel-heading-box h1 {
-          font-family: 'permanent marker', cursive;
-          font-size: 2rem;
+          font-family: 'Courgette', cursive;
+          font-size: 3rem;
           color: #fff;
           color: #fff;
           transition: .3s; }
           .body__index .grid__container .main__container .carousel .carousel-inner .carousel-heading-box h1:hover {
-            color: #d93f14;
+            color: #ee6f07;
             transform: scale(1.1); }
         .body__index .grid__container .main__container .carousel .carousel-inner .carousel-item .carousel-card-container {
           display: flex;
@@ -70,7 +121,7 @@
   .footer p {
     color: #fff;
     font-family: 'poppins', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #fff; }
   .footer .logo-container {
     flex-direction: column;
@@ -80,21 +131,21 @@
     transition: .3s; }
     .footer .logo-container:hover {
       transform: scale(1.1);
-      color: #790909; }
+      color: #ff3401; }
     .footer .logo-container a {
       color: #fff;
       font-family: 'poppins', sans-serif;
-      font-size: 1.8rem;
+      font-size: 2rem;
       color: #fff;
       transition: .3s; }
       .footer .logo-container a:hover {
-        color: #790909; }
+        color: #ff3401; }
     .footer .logo-container .logo-box img {
       border-radius: 50%;
       width: 45%; }
   .footer .nav .nav-item .nav-link {
     font-family: 'poppins', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #fff;
     transition: .5s; }
     .footer .nav .nav-item .nav-link:hover {
