@@ -41,10 +41,7 @@
 
                     &:hover::after {
                         content: 'Apparel Section';
-                        color: $TextColor;
-                        font-size: 2rem;
-                        font-weight: bold;
-                        font-family: 'permanent marker', cursive;
+                        @include TerciaryText;
                         position: absolute;
                         left: 8.5vw;
                         opacity: 1;

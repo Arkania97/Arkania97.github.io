@@ -40,9 +40,17 @@
 
                 .card {
                     background-color: transparent;
+                    border: 1px solid $RgbaFilter;
 
                     .card-body {
                         color: $TextColor;
+                        button {
+                        transition: .3s;
+                            &:hover {
+                                transform: scale(1.3);
+                                color: $PrimaryColor;
+                            }
+                        }
                     }
                 }
 
