@@ -1,0 +1,17 @@
+@mixin TitleText(){
+    font-family: 'permanent marker', cursive;
+    font-size: 2rem;
+    color: #fff;
+}
+
+@mixin SecondaryText(){
+    font-family: 'poppins', sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+@mixin SuperCenter() {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

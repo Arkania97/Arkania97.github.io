@@ -1,0 +1,46 @@
+.footer {
+    
+    min-height: 150px;
+    width: 100%;
+    p {
+        color:$TextColor;
+        @include SecondaryText;
+    }
+    .logo-container {
+        flex-direction: column;
+        @include SuperCenter;
+        transition: .3s;
+        &:hover {
+            transform: scale(1.1);
+            
+            color: $SecondaryColor;
+        }
+        a {
+            color: $TextColor;
+            @include SecondaryText;
+            transition: .3s;
+            &:hover {
+            color: $SecondaryColor;
+            }
+            
+        }
+        .logo-box {
+            img {
+                border-radius:50%;
+                width: 45%;
+            }
+            
+        }
+    }
+    .nav {
+        .nav-item {
+            .nav-link {
+                @include SecondaryText;
+                transition: .5s;
+                &:hover {
+                    border-bottom: 2px solid #fff;
+                }
+            }
+        }
+    }
+}
