@@ -1,13 +1,19 @@
 @mixin TitleText(){
     font-family: 'Courgette', cursive;
     font-size: 3rem;
-    color: #fff;
+    color: $TextColor;
 }
 
 @mixin SecondaryText(){
     font-family: 'poppins', sans-serif;
     font-size: 2rem;
-    color: #fff;
+    color: $TextColor;
+}
+
+@mixin TerciaryText(){
+    font-family: 'Potta One', cursive;
+    font-size: 3rem;
+    color: $TextColor;
 }
 
 @mixin SuperCenter() {

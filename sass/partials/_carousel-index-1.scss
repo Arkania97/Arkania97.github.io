@@ -1,0 +1,25 @@
+.carousel {
+
+    .carousel-inner {
+
+        max-height: 600px;
+
+        .carousel-item {
+            max-height: 600px;
+
+            .carousel-caption {
+                h5 {
+                    @include TitleText;
+                    color: $TerciaryColor;
+                    font-size: 3rem;
+                }
+
+                p {
+                    @include SecondaryText;
+                    color: $TextColor;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}

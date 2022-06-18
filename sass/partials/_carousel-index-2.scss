@@ -1,0 +1,54 @@
+.carousel {
+    background-color: map-get($index-bg, background-color);
+    background-image: map-get($index-bg, background-image);
+    background-attachment: map-get($index-bg, background-attachment);
+    background-size: map-get($index-bg, background-size);
+
+    .carousel-inner {
+        .carousel-heading-box {
+            h1 {
+                @include TerciaryText;
+                color: $TextColor;
+                transition: .3s;
+                animation: color 1s infinite alternate;
+                
+                @keyframes color {
+                    0% {
+                        color: $PrimaryColor;
+                    }
+                    
+                    50% {
+                        color: $SecondaryColor
+                    }
+                    100% {
+                        color: $TerciaryColor;
+                    }
+                }
+
+                &:hover {
+                    color: $PrimaryColor;
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+
+        .carousel-item {
+            .carousel-card-container {
+                display: flex;
+                justify-content: space-evenly;
+
+                .card {
+                    background-color: transparent;
+
+                    .card-body {
+                        color: $TextColor;
+                    }
+                }
+
+
+            }
+
+        }
+    }
+}
