@@ -44,6 +44,11 @@
 
                     .card-body {
                         color: $TextColor;
+                        p {
+                            @include SecondaryText;
+                            font-size: 1.5rem;
+                            color: $PrimaryColor;
+                        }
                         button {
                         transition: .3s;
                             &:hover {
