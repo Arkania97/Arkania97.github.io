@@ -17,7 +17,7 @@
             }
             .main__container-internal {
                 grid-area: main;
-                .main__row {
+                .main__row2 {
                     .main__Cardcol {
                         justify-content: space-around;
                     align-content: center;
@@ -26,6 +26,10 @@
                         background-color: $RgbaFilter;
                         color: $TextColor;
                         .card-body {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-content: center;
                             h5 {
                                 font-family: 'courgette', cursive;
                                 font-size: 2rem;
@@ -39,11 +43,20 @@
                                     color: rgba(246, 239, 239, 0.815);
                                 }
                             }
+                            a {
+                                font-size: 1.5rem;
+                                color: $PrimaryColor;
+                                transition: .3s;    
+                                &:hover {
+                                    color: $TextColor;
+                                    background-color: $PrimaryColor;
+                                }
+                            }
                         }
                     }
                     }
                 }
-                .main__row2 {
+                .main__row {
                     margin: 2rem auto;
                     .main__banner {
                         width:100%;
@@ -68,5 +81,8 @@
                     }
                 }
             }
+        .footer {
+            grid-area: footer;
+        }
     }
 }

@@ -167,34 +167,46 @@
       grid-area: header; }
     .body__internal .grid__container .main__container-internal {
       grid-area: main; }
-      .body__internal .grid__container .main__container-internal .main__row .main__Cardcol {
+      .body__internal .grid__container .main__container-internal .main__row2 .main__Cardcol {
         justify-content: space-around;
         align-content: center;
         flex-wrap: wrap; }
-        .body__internal .grid__container .main__container-internal .main__row .main__Cardcol .card {
+        .body__internal .grid__container .main__container-internal .main__row2 .main__Cardcol .card {
           background-color: rgba(35, 33, 33, 0.73);
           color: #fff; }
-          .body__internal .grid__container .main__container-internal .main__row .main__Cardcol .card .card-body h5 {
-            font-family: 'courgette', cursive;
-            font-size: 2rem; }
-          .body__internal .grid__container .main__container-internal .main__row .main__Cardcol .card .card-body p {
-            font-family: 'poppins', sans-serif;
-            font-size: 2rem;
-            color: #fff; }
-          .body__internal .grid__container .main__container-internal .main__row .main__Cardcol .card .card-body ul li {
-            font-size: 1.5rem;
-            color: rgba(246, 239, 239, 0.815); }
-      .body__internal .grid__container .main__container-internal .main__row2 {
+          .body__internal .grid__container .main__container-internal .main__row2 .main__Cardcol .card .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center; }
+            .body__internal .grid__container .main__container-internal .main__row2 .main__Cardcol .card .card-body h5 {
+              font-family: 'courgette', cursive;
+              font-size: 2rem; }
+            .body__internal .grid__container .main__container-internal .main__row2 .main__Cardcol .card .card-body p {
+              font-family: 'poppins', sans-serif;
+              font-size: 2rem;
+              color: #fff; }
+            .body__internal .grid__container .main__container-internal .main__row2 .main__Cardcol .card .card-body ul li {
+              font-size: 1.5rem;
+              color: rgba(246, 239, 239, 0.815); }
+            .body__internal .grid__container .main__container-internal .main__row2 .main__Cardcol .card .card-body a {
+              font-size: 1.5rem;
+              color: #ee6f07;
+              transition: .3s; }
+              .body__internal .grid__container .main__container-internal .main__row2 .main__Cardcol .card .card-body a:hover {
+                color: #fff;
+                background-color: #ee6f07; }
+      .body__internal .grid__container .main__container-internal .main__row {
         margin: 2rem auto; }
-        .body__internal .grid__container .main__container-internal .main__row2 .main__banner {
+        .body__internal .grid__container .main__container-internal .main__row .main__banner {
           width: 100%;
           height: 350px; }
-          .body__internal .grid__container .main__container-internal .main__row2 .main__banner img {
+          .body__internal .grid__container .main__container-internal .main__row .main__banner img {
             object-fit: cover;
             width: 100%;
             max-height: 350px;
             border-radius: 5px; }
-          .body__internal .grid__container .main__container-internal .main__row2 .main__banner p {
+          .body__internal .grid__container .main__container-internal .main__row .main__banner p {
             font-family: 'Courgette', cursive;
             font-size: 3rem;
             color: #fff;
@@ -202,8 +214,10 @@
             color: #ee6f07;
             font-size: 5rem;
             transition: .4s; }
-            .body__internal .grid__container .main__container-internal .main__row2 .main__banner p:hover {
+            .body__internal .grid__container .main__container-internal .main__row .main__banner p:hover {
               color: #fff; }
+    .body__internal .grid__container .footer {
+      grid-area: footer; }
 
 .footer {
   background-image: url(../assets/texture2.png);
