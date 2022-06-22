@@ -46,6 +46,7 @@
                         color: $PrimaryColor;
                         font-size: 5rem;
                         transition: .4s;
+                        margin: 0 1rem;
 
                         &:hover {
                             color: $TextColor;
@@ -66,7 +67,6 @@
                     .card {
                         background-color: $RgbaFilter;
                         color: $TextColor;
-
                         .card-body {
                             display: flex;
                             flex-direction: column;

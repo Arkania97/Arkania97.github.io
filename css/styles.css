@@ -188,7 +188,8 @@
             position: absolute;
             color: #ee6f07;
             font-size: 5rem;
-            transition: .4s; }
+            transition: .4s;
+            margin: 0 1rem; }
             .body__internal .grid__container .main__container-internal .main__row .main__banner p:hover {
               color: #fff; }
       .body__internal .grid__container .main__container-internal .main__row2 {
@@ -260,7 +261,7 @@
     font-family: 'poppins', sans-serif;
     font-size: 2rem;
     color: #fff;
-    transition: .5s; }
+    transition: .3s; }
     .footer .nav .nav-item .nav-link:hover {
       border-bottom: 2px solid #fff; }
 
