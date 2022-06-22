@@ -99,7 +99,7 @@
       font-family: 'Courgette', cursive;
       font-size: 3rem;
       color: #fff;
-      color: #741212;
+      color: #ee6f07;
       font-size: 3rem; }
     .carousel .carousel-inner .carousel-item .carousel-caption p {
       font-family: 'poppins', sans-serif;
@@ -114,23 +114,12 @@
   background-attachment: fixed;
   background-size: cover; }
   .carousel .carousel-inner .carousel-heading-box h1 {
-    font-family: 'Potta One', cursive;
+    font-family: 'Courgette', cursive;
     font-size: 3rem;
     color: #fff;
     color: #fff;
-    transition: .3s;
-    animation: color 1s infinite alternate; }
-
-@keyframes color {
-  0% {
-    color: #ee6f07; }
-  50% {
-    color: #ff3401; }
-  100% {
-    color: #741212; } }
-    .carousel .carousel-inner .carousel-heading-box h1:hover {
-      color: #ee6f07;
-      transform: scale(1.1); }
+    color: #ee6f07;
+    transform: scale(1.1); }
   .carousel .carousel-inner .carousel-item .carousel-card-container {
     display: flex;
     justify-content: space-evenly; }
@@ -138,17 +127,22 @@
       background-color: transparent;
       border: 1px solid rgba(35, 33, 33, 0.73); }
       .carousel .carousel-inner .carousel-item .carousel-card-container .card .card-body {
-        color: #fff; }
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center; }
         .carousel .carousel-inner .carousel-item .carousel-card-container .card .card-body p {
           font-family: 'poppins', sans-serif;
           font-size: 2rem;
           color: #fff;
-          font-size: 1.5rem;
+          font-size: 2rem;
           color: #ee6f07; }
         .carousel .carousel-inner .carousel-item .carousel-card-container .card .card-body button {
-          transition: .3s; }
+          transition: .3s;
+          font-size: 1.5rem; }
           .carousel .carousel-inner .carousel-item .carousel-card-container .card .card-body button:hover {
-            transform: scale(1.3);
+            transform: scale(1.07);
             color: #ee6f07; }
 
 .body__internal {
