@@ -1,4 +1,6 @@
 .carousel {
+    margin-top: 1rem;
+    z-index: 0; //Z-index Soluciona problema de seleccion sobre el dropdown de la navbar
 
     .carousel-inner {
 
