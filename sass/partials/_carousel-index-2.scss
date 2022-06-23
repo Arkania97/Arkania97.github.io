@@ -35,13 +35,23 @@
                             font-size: 2rem;
                             color: $PrimaryColor;
                         }
-                        button {
-                        transition: .3s;
-                        font-size: 1.5rem;
-                            &:hover {
-                                transform: scale(1.07);
-                                color: $PrimaryColor;
+                        .carousel-btn-container:hover + .carousel-list-container {
+                            display: block;
+                            //Resolver como dejar :active funcionando
+                            .deluxe-btn {
+                            transition: .3s;
+                            font-size: 1.5rem;
+                            display: block;
+                                &:hover {
+                                    transform: scale(1.07);
+                                    color: $PrimaryColor;
+                                }
                             }
+                        }
+                        .carousel-list-container {
+                            @include SecondaryText;
+                            font-size: 2rem;
+                            display: none;
                         }
                     }
                 }
