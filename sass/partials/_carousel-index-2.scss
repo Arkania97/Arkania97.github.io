@@ -5,6 +5,7 @@
     background-size: map-get($index-bg, background-size);
 
     .carousel-inner {
+        min-height: 600px;
         .carousel-heading-box {
             h4 {
                 @include TitleText;
@@ -22,6 +23,7 @@
             .carousel-card-container {
                 display: flex;
                 justify-content: space-evenly;
+                
 
                 .card {
                     background-color: transparent;
@@ -30,28 +32,36 @@
                     .card-body {
                         color: $TextColor;
                         @include SuperCenterY;
+
                         p {
                             @include SecondaryText;
                             font-size: 2rem;
                             color: $PrimaryColor;
                         }
-                        .carousel-btn-container:hover + .carousel-list-container {
+                        .deluxe-btn {
                             display: block;
-                            //Resolver como dejar :active funcionando
-                            .deluxe-btn {
-                            transition: .3s;
-                            font-size: 1.5rem;
-                            display: block;
-                                &:hover {
-                                    transform: scale(1.07);
-                                    color: $PrimaryColor;
+
+                        }
+                        .accordion {
+                            background-color: $RgbaFilter;
+                            @include SuperCenterY;
+                            .accordion-item {
+                                background-color: $RgbaFilter;
+                                @include SuperCenterY;
+                                h2 {
+                                    align-self: center;
+
+                                    .accordion-button {
+                                        background-color: $RgbaFilter;
+                                        color: $PrimaryColor;
+                                        font-size: 1.5rem;
+                                    }
                                 }
                             }
-                        }
-                        .carousel-list-container {
-                            @include SecondaryText;
-                            font-size: 2rem;
-                            display: none;
+                            .accordion-body {
+                                color: $TextColor;
+                                font-size: 1.2rem;
+                            }
                         }
                     }
                 }
