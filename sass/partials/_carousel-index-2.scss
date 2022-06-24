@@ -9,12 +9,12 @@
         .carousel-heading-box {
             h4 {
                 @include TitleText;
-                color: $TextColor;
+                color: $PrimaryColor;
+                transition: .3s;
 
-                //&:hover {
-                    color: $PrimaryColor;
-                    transform: scale(1.1);
-                //}
+                &:hover {
+                    color: $SecondaryColor;
+                }
             }
 
         }
@@ -38,13 +38,13 @@
                             font-size: 2rem;
                             color: $PrimaryColor;
                         }
-                        .deluxe-btn {
-                            display: block;
 
-                        }
                         .accordion {
                             background-color: $RgbaFilter;
                             @include SuperCenterY;
+                            
+                                
+                            margin-bottom: 5rem;
                             .accordion-item {
                                 background-color: $RgbaFilter;
                                 @include SuperCenterY;
@@ -60,7 +60,7 @@
                             }
                             .accordion-body {
                                 color: $TextColor;
-                                font-size: 1.2rem;
+                                font-size: 1.3rem;
                             }
                         }
                     }
