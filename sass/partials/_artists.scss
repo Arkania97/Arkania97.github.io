@@ -1,4 +1,4 @@
-.body__internal {
+.body__artists {
     width: 100%;
     height: 100vh;
     background-color: map-get($internal-bg, background-color);
@@ -18,7 +18,7 @@
             grid-area: header;
         }
 
-        .main__container-internal {
+        .main__container-artists {
             grid-area: main;
 
             .main__row {
@@ -52,61 +52,58 @@
                             color: $TextColor;
                         }
                     }
+
                 }
             }
 
-            .main__row2 {
+            .main__row2-artists {
                 width: 100%;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, 600px);
+                grid-template-rows: repeat(2, 800px);
                 grid-gap: 5px;
 
                 @media screen and (max-width:992px) {
                     @include SuperCenter;
                     flex-wrap: wrap;
                 }
-                    .card {
-                        background-color: $RgbaFilter;
-                        color: $TextColor;
-                        justify-self: center;
-                        .card-body {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                            align-content: center;
 
-                            h5 {
-                                font-family: 'courgette', cursive;
-                                font-size: 2rem;
+                .card {
+                    background-color: $RgbaFilter;
+                    color: $TextColor;
+                    justify-self: center;
+                    img {
+                        max-height: 400px;
+                    }
+
+                    .card-body {
+                        @include SuperCenterY;
+                        justify-content: space-around;
+
+                        h5 {
+                            font-family: 'courgette', cursive;
+                            font-size: 2rem;
+                            color: $PrimaryColor;
+                            transition: .3s;
+                            &:hover{
+                                color: $TextColor;
+                                transform: scale(1.2);
                             }
+                        }
 
-                            p {
-                                @include SecondaryText;
-                            }
-
-                            ul {
-                                li {
-                                    font-size: 1.5rem;
-                                    color: $TextColor;
-                                }
-                            }
-
-                            a {
+                        p {
+                            @include SecondaryText;
+                        }
+                        ul {
+                            li {
                                 font-size: 1.5rem;
-                                color: $PrimaryColor;
-                                transition: .3s;
-
-                                &:hover {
-                                    color: $TextColor;
-                                    background-color: $PrimaryColor;
-                                }
+                                color: $TextColor;
                             }
                         }
                     }
+                }
             }
         }
-
         .footer {
             grid-area: footer;
         }
