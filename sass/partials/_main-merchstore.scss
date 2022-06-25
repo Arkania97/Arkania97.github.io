@@ -73,12 +73,16 @@
                         .card-body {
                             display: flex;
                             flex-direction: column;
-                            justify-content: space-between;
+                            justify-content: space-around;
                             align-content: center;
 
                             h5 {
                                 font-family: 'courgette', cursive;
                                 font-size: 2rem;
+                                transition: .5s;
+                                &:hover {
+                                    color: $SecondaryColor;
+                                }
                             }
 
                             p {

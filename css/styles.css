@@ -227,11 +227,14 @@
           .body__internal .grid__container .main__container-internal .main__row2 .card .card-body {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             align-content: center; }
             .body__internal .grid__container .main__container-internal .main__row2 .card .card-body h5 {
               font-family: 'courgette', cursive;
-              font-size: 2rem; }
+              font-size: 2rem;
+              transition: .5s; }
+              .body__internal .grid__container .main__container-internal .main__row2 .card .card-body h5:hover {
+                color: #ff3401; }
             .body__internal .grid__container .main__container-internal .main__row2 .card .card-body p {
               font-family: 'poppins', sans-serif;
               font-size: 2rem;
