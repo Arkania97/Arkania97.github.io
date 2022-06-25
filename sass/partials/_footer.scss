@@ -7,12 +7,16 @@
     p {
         color: $TextColor;
         @include SecondaryText;
+        @media screen and (max-width: 586px) {
+            font-size: 1.3rem;
+        }
     }
 
     .logo-container {
         flex-direction: column;
         @include SuperCenter;
         transition: .3s;
+        
 
         &:hover {
             transform: scale(1.1);
@@ -24,19 +28,30 @@
             color: $TextColor;
             @include SecondaryText;
             transition: .3s;
+            
 
             &:hover {
                 color: $SecondaryColor;
             }
+            
 
         }
+        
 
         .logo-box {
             img {
                 border-radius: 50%;
                 width: 45%;
+                @media screen and (max-width: 768px) {
+                    width: 30%;
+                }
             }
 
+        }
+        .footer-anchor {
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
         }
     }
 
@@ -45,6 +60,7 @@
             .nav-link {
                 @include SecondaryText;
                 transition: .3s;
+                
 
                 &:hover {
                     border-bottom: 2px solid #fff;
