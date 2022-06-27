@@ -1,15 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Online Music-Shop. Client Support Section">
+    <meta name="keywords" content="Client Support, Warranty, Contact">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:ital,wght@1,300&family=Potta+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/e91f63f36a.js" crossorigin="anonymous"></script>
+    <title>Horizon-Guitars</title>
 </head>
-<body>
-    <div>
-        <h1>I'm working on it :)</h1>
-        <a href="../index.html">Back to Index</a>
+
+<body class="body__support">
+    <div class="grid__container">
+        <header id="header" class="header">
+            <!--Header-->
+            <nav class="navbar navbar-expand-lg bg-dark animate__animated animate__slideInDown">
+                <div class="container-fluid navbar-container">
+                    <a class="navbar-brand" href="../index.html">Horizon</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <!--Espacio para futuro item-->
+                            </li>
+                            <li class="nav-item dropdown">
+                                <!--Dropdown-->
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Music Gear
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="guitar.html">Guitar</a></li>
+                                    <li><a class="dropdown-item" href="bass.html">Bass</a></li>
+                                    <li><a class="dropdown-item" href="fxpedals.html">Fx-Pedals</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="amps.html">Amps</a></li>
+
+                                </ul>
+                            </li>
+
+                            <div class="nav-btn-container d-flex">
+                                <div class="nav-btn d-flex">
+                                    <!--Button de Apparel-->
+                                    <a href="apparel.html" role="button" type="button"
+                                        class="btn btn-outline-light">Apparel</a>
+                                </div>
+                                <div class="nav-btn d-flex">
+                                    <!--Button de Artists-->
+                                    <a href="../artists/artists.html" role="button" type="button"
+                                        class="btn btn-outline-light">Artists</a>
+                                </div>
+                                <div class="nav-btn d-flex">
+                                    <!--Button de Support-->
+                                    <a href="../support/support.html" role="button" type="button"
+                                        class="btn btn-outline-light">Support</a>
+                                </div>
+                            </div>
+                            <div class="socialmedia-box text-center mx-2">
+                                <a href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands fa-facebook-f mx-2"></i></a>
+                                <a href="https://www.twitter.com/" target="_blank"><i
+                                        class="fa-brands fa-twitter mx-2"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fa-brands fa-instagram mx-2"></i></a>
+                            </div>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <main class="container main__support">
+            <div class="main__support-title">
+                <h1>Client Support</h1>
+                <p>Got any questions, comments or concerns? <br> Feel free to contact us, we're all ears!</p>
+            </div>
+            <div class="mb-3 main__support-form">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Username">
+              </div>
+
+            <div class="mb-3 main__support-form">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+
+              <div class="mb-3 main__support-form">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="phone" placeholder="Phone Number">
+              </div>
+
+              <div class="mb-3 main__support-form">
+                <label for="serial" class="form-label">Serial Number</label>
+                <input type="number" class="form-control" id="serial" placeholder="xxx - xxx - xxx - xxx">
+              </div>
+
+              <select class="form-select main__support-form mb-3" aria-label="Default select example">
+                <option selected>Select your Region</option>
+                <option value="1">North America</option>
+                <option value="2">Latam</option>
+                <option value="3">West Europe</option>
+                <option value="3">East Europe</option>
+                <option value="3">Oceania</option>
+              </select>
+
+              <select class="form-select main__support-form mb-3" aria-label="Default select example">
+                <option selected>Select your Subject</option>
+                <option value="1">Us Sales</option>
+                <option value="2">International Sales</option>
+                <option value="3">Technical Support</option>
+                <option value="3">General Support</option>
+              </select>
+
+              <div class="mb-3 main__support-form">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Any concerns requiring assitance? Let us know the details of your situation so we can have a better approach to your problem. Horizon-Gear wishes you a great day 𝄢 "></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-dark">Submit</button>
+
+            </article>
+        </main>
+        <!--Footer-->
+        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top footer">
+            <p class="col-md-4 mb-0 text-center p-2">Sun Valley CA, 91272 8953 Pendleton St.
+                info@horizongear.com</p>
+
+            <div class="logo-container d-flex text-center">
+                <a href="#">
+                    <span class="logo-box"><img src="../assets/music-logo.png" alt="logo image"
+                            class="img-fluid logo-img"></span>
+                </a>
+                <a class="footer-anchor" href="#header">Back top</a>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Apparel</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">About</a></li>
+            </ul>
+        </footer>
     </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
