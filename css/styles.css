@@ -464,12 +464,14 @@
         font-size: 2rem;
         color: #fff;
         font-size: 1.5rem; }
-      .body__support .grid__container .main__support button {
+      .body__support .grid__container .main__support-btn {
         font-size: 1.5rem;
         color: #ee6f07;
         transition: .3s; }
-        .body__support .grid__container .main__support button:hover {
+        .body__support .grid__container .main__support-btn:hover {
           border: 1px solid #ee6f07; }
+      .body__support .grid__container .main__support select {
+        color: #000; }
     .body__support .grid__container .footer {
       grid-area: footer; }
 

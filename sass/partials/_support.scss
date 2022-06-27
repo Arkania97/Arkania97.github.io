@@ -45,7 +45,7 @@
                 font-size: 1.5rem;
             }
 
-            button {
+            &-btn {
                 font-size: 1.5rem;
                 color: $PrimaryColor;
                 transition: .3s;
@@ -54,6 +54,11 @@
                     border: 1px solid $PrimaryColor;
                 }
             }
+            select {
+                color: #000;
+            }
+
+        
         }
         .footer {
             grid-area: footer;
