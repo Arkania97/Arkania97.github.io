@@ -52,6 +52,12 @@
                             color: $TextColor;
                         }
                     }
+                    p {
+                        @include SecondaryText;
+                        color: #000;
+                        position: absolute;
+                        margin: 5rem 0.5rem;
+                    }
 
                 }
             }

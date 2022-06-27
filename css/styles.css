@@ -271,9 +271,6 @@
       .body__internal .grid__container .main__internal-row {
         margin-top: 2rem;
         height: auto; }
-        @media screen and (max-width: 515px) {
-          .body__internal .grid__container .main__internal-row {
-            max-height: 200px; } }
         .body__internal .grid__container .main__internal-row .banner {
           width: 100%;
           height: 400px; }
@@ -378,6 +375,13 @@
             margin: 0 1rem; }
             .body__artists .grid__container .main__container-artists .main__row .main__banner h1:hover {
               color: #fff; }
+          .body__artists .grid__container .main__container-artists .main__row .main__banner p {
+            font-family: 'poppins', sans-serif;
+            font-size: 2rem;
+            color: #fff;
+            color: #000;
+            position: absolute;
+            margin: 5rem 0.5rem; }
       .body__artists .grid__container .main__container-artists .main__row2-artists {
         width: 100%;
         display: grid;
