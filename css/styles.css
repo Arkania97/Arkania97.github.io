@@ -134,6 +134,9 @@
   opacity: 0.8;
   min-height: 150px;
   width: 100%; }
+  @media screen and (max-width: 500px) {
+    .footer {
+      min-height: 200px; } }
   .footer p {
     color: #fff;
     font-family: 'poppins', sans-serif;
@@ -173,6 +176,9 @@
     font-size: 2rem;
     color: #fff;
     transition: .3s; }
+    @media screen and (max-width: 364px) {
+      .footer .nav .nav-item .nav-link {
+        font-size: 1.5rem; } }
     .footer .nav .nav-item .nav-link:hover {
       border-bottom: 2px solid #fff; }
 
@@ -464,6 +470,8 @@
         transition: .3s; }
         .body__support .grid__container .main__support button:hover {
           border: 1px solid #ee6f07; }
+    .body__support .grid__container .footer {
+      grid-area: footer; }
 
 * {
   box-sizing: border-box;

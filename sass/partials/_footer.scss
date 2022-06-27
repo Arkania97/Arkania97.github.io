@@ -3,6 +3,9 @@
     opacity: 0.8;
     min-height: 150px;
     width: 100%;
+    @media screen and (max-width: 500px) {
+        min-height: 200px;
+    }
 
     p {
         color: $TextColor;
@@ -60,6 +63,9 @@
             .nav-link {
                 @include SecondaryText;
                 transition: .3s;
+                @media screen and (max-width: 364px) {
+                    font-size: 1.5rem;
+                }
                 
 
                 &:hover {

@@ -5,7 +5,7 @@
     background-image: map-get($index-bg, background-image);
     background-attachment: map-get($index-bg, background-attachment);
     background-size: map-get($index-bg, background-size);
-    
+
     .grid__container {
         display: grid;
         grid-template-columns: 1fr;
@@ -14,38 +14,49 @@
             "main"
             "footer";
 
-            .header {
-                grid-area: header;
-            }
-            .main__support {
-                grid-area: main;
-                margin-top: 3rem;
-                &-title {
-                    @include SecondaryText;
-                    h1 {
-                        color: $PrimaryColor;
-                        transition: .3s;
-                        &:hover {
-                            color: $SecondaryColor;
-                        }
-                    }
-                    p {
-                        font-size: 1.3rem;
-                    }
-                }
-                &-form {
-                    max-width: 500px;
-                    @include SecondaryText;
-                    font-size: 1.5rem;
-                }
-                button {
-                    font-size: 1.5rem;
+        .header {
+            grid-area: header;
+        }
+
+        .main__support {
+            grid-area: main;
+            margin-top: 3rem;
+
+            &-title {
+                @include SecondaryText;
+
+                h1 {
                     color: $PrimaryColor;
                     transition: .3s;
+
                     &:hover {
-                        border: 1px solid $PrimaryColor;
+                        color: $SecondaryColor;
                     }
                 }
+
+                p {
+                    font-size: 1.3rem;
+                }
             }
+
+            &-form {
+                max-width: 500px;
+                @include SecondaryText;
+                font-size: 1.5rem;
+            }
+
+            button {
+                font-size: 1.5rem;
+                color: $PrimaryColor;
+                transition: .3s;
+
+                &:hover {
+                    border: 1px solid $PrimaryColor;
+                }
+            }
+        }
+        .footer {
+            grid-area: footer;
+        }
     }
 }
