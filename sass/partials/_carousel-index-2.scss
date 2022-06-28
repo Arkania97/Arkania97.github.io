@@ -28,6 +28,8 @@
                 .card {
                     background-color: transparent;
                     border: 1px solid $RgbaFilter;
+                    padding: 1rem;
+                    border: 1px solid $PrimaryColor;
 
                     .card-body {
                         color: $TextColor;

@@ -99,22 +99,22 @@
     grid-template-areas: "header" "main" "footer"; }
     .body__index .grid__container .header {
       grid-area: header; }
-    .body__index .grid__container .main__container {
+    .body__index .grid__container .main__index {
       grid-area: main; }
-      .body__index .grid__container .main__container-MiddleRow {
+      .body__index .grid__container .main__index-MiddleRow {
         justify-content: space-between;
         align-content: center;
         margin: 1rem auto; }
         @media screen and (max-width: 576px) {
-          .body__index .grid__container .main__container-MiddleRow {
+          .body__index .grid__container .main__index-MiddleRow {
             flex-direction: column; } }
-        .body__index .grid__container .main__container-MiddleRow .img-box-1, .body__index .grid__container .main__container-MiddleRow .img-box-2, .body__index .grid__container .main__container-MiddleRow .img-box-3 {
+        .body__index .grid__container .main__index-MiddleRow .img-box-1, .body__index .grid__container .main__index-MiddleRow .img-box-2, .body__index .grid__container .main__index-MiddleRow .img-box-3 {
           transition: .3s;
           margin: 1rem 0; }
-          .body__index .grid__container .main__container-MiddleRow .img-box-1:hover, .body__index .grid__container .main__container-MiddleRow .img-box-2:hover, .body__index .grid__container .main__container-MiddleRow .img-box-3:hover {
+          .body__index .grid__container .main__index-MiddleRow .img-box-1:hover, .body__index .grid__container .main__index-MiddleRow .img-box-2:hover, .body__index .grid__container .main__index-MiddleRow .img-box-3:hover {
             opacity: 0.7;
             transform: scale(1.1); }
-          .body__index .grid__container .main__container-MiddleRow .img-box-1:hover::after, .body__index .grid__container .main__container-MiddleRow .img-box-2:hover::after, .body__index .grid__container .main__container-MiddleRow .img-box-3:hover::after {
+          .body__index .grid__container .main__index-MiddleRow .img-box-1:hover::after, .body__index .grid__container .main__index-MiddleRow .img-box-2:hover::after, .body__index .grid__container .main__index-MiddleRow .img-box-3:hover::after {
             content: 'Apparel Section';
             font-family: 'Potta One', cursive;
             font-size: 3rem;
@@ -122,9 +122,9 @@
             position: absolute;
             left: 8.5vw;
             opacity: 1; }
-        .body__index .grid__container .main__container-MiddleRow .img-box-2:hover::after {
+        .body__index .grid__container .main__index-MiddleRow .img-box-2:hover::after {
           content: 'Contact Us'; }
-        .body__index .grid__container .main__container-MiddleRow .img-box-3:hover::after {
+        .body__index .grid__container .main__index-MiddleRow .img-box-3:hover::after {
           content: 'Artists Section'; }
     .body__index .grid__container .footer {
       grid-area: footer; }
@@ -222,7 +222,9 @@
       justify-content: space-evenly; }
       .carousel .carousel-inner .carousel-item .carousel-card-container .card {
         background-color: transparent;
-        border: 1px solid rgba(35, 33, 33, 0.73); }
+        border: 1px solid rgba(35, 33, 33, 0.73);
+        padding: 1rem;
+        border: 1px solid #ee6f07; }
         .carousel .carousel-inner .carousel-item .carousel-card-container .card .card-body {
           color: #fff;
           display: flex;
