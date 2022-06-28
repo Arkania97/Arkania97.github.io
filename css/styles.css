@@ -107,7 +107,8 @@
         margin: 1rem auto; }
         @media screen and (max-width: 576px) {
           .body__index .grid__container .main__index-MiddleRow {
-            flex-direction: column; } }
+            flex-direction: column;
+            max-width: 500px; } }
         .body__index .grid__container .main__index-MiddleRow .MiddleRow-Title h1 {
           font-family: 'Courgette', cursive;
           font-size: 3rem;
