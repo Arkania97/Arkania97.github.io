@@ -109,8 +109,8 @@
           .body__index .grid__container .main__index-MiddleRow {
             flex-direction: column; } }
         .body__index .grid__container .main__index-MiddleRow .MiddleRow-Title h1 {
-          font-family: 'Courgette', cursive;
-          font-size: 3rem;
+          font-family: 'poppins', sans-serif;
+          font-size: 2rem;
           color: #fff;
           color: #ee6f07;
           display: none; }

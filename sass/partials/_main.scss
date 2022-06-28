@@ -31,7 +31,7 @@
                 }
                 .MiddleRow-Title {
                     h1 {
-                        @include TitleText;
+                        @include SecondaryText;
                         color: $PrimaryColor;
                         display: none;
                         @media screen and (max-width: 576px) {
