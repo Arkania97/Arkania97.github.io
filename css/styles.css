@@ -89,98 +89,6 @@
       .header nav .navbar-container .collapse form button:hover {
         border: 1px solid #ff3401; }
 
-.header-index {
-  z-index: 1; }
-  .header-index nav .navbar-container .navbar-toggler {
-    border: 2px solid #fff;
-    transform: scale(1.5);
-    margin: 0 1rem; }
-  .header-index nav .navbar-container .navbar-brand {
-    font-family: 'Courgette', cursive;
-    font-size: 3rem;
-    color: #fff;
-    font-size: 2.5rem;
-    transition: .3s; }
-    .header-index nav .navbar-container .navbar-brand:hover {
-      color: #ee6f07; }
-  .header-index nav .navbar-container .collapse .navbar-nav .dropdown .nav-link {
-    font-family: 'poppins', sans-serif;
-    font-size: 2rem;
-    color: #fff;
-    color: #fff;
-    transition: .3s; }
-    .header-index nav .navbar-container .collapse .navbar-nav .dropdown .nav-link:hover {
-      color: #ee6f07; }
-  .header-index nav .navbar-container .collapse .navbar-nav .dropdown .dropdown-menu {
-    min-width: 145px;
-    background-color: rgba(35, 33, 33, 0.73); }
-    .header-index nav .navbar-container .collapse .navbar-nav .dropdown .dropdown-menu li > a {
-      font-family: 'poppins', sans-serif;
-      font-size: 1.7rem;
-      font-weight: 500;
-      color: #fff;
-      transition: .3s; }
-      .header-index nav .navbar-container .collapse .navbar-nav .dropdown .dropdown-menu li > a:hover {
-        color: #ff3401; }
-  .header-index nav .navbar-container .collapse .navbar-nav .socialmedia-box {
-    min-height: 30px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center; }
-    @media screen and (max-width: 992px) {
-      .header-index nav .navbar-container .collapse .navbar-nav .socialmedia-box {
-        justify-content: start; } }
-    .header-index nav .navbar-container .collapse .navbar-nav .socialmedia-box a > i {
-      color: #fff;
-      transition: .3s;
-      font-size: 1.5rem;
-      align-self: end; }
-      .header-index nav .navbar-container .collapse .navbar-nav .socialmedia-box a > i:hover {
-        color: #ff3401;
-        transform: scale(1.5); }
-  .header-index nav .navbar-container .collapse .navbar-nav .nav-btn-container {
-    justify-content: space-around;
-    align-content: center; }
-    .header-index nav .navbar-container .collapse .navbar-nav .nav-btn-container .nav-btn {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-content: center;
-      justify-content: center;
-      margin: 0 1rem;
-      transition: .3s; }
-      @media screen and (max-width: 992px) {
-        .header-index nav .navbar-container .collapse .navbar-nav .nav-btn-container .nav-btn {
-          flex-direction: row;
-          display: inline-flex;
-          max-width: 200px;
-          transform: scale(1.5); } }
-      .header-index nav .navbar-container .collapse .navbar-nav .nav-btn-container .nav-btn a {
-        font-family: 'poppins', sans-serif;
-        font-size: 2rem;
-        color: #fff;
-        font-size: 1.2rem;
-        color: #ee6f07; }
-        .header-index nav .navbar-container .collapse .navbar-nav .nav-btn-container .nav-btn a:hover {
-          border: 1px solid #ff3401;
-          background-color: rgba(35, 33, 33, 0.73); }
-  .header-index nav .navbar-container .collapse form {
-    min-width: 250px; }
-    @media screen and (max-width: 992px) {
-      .header-index nav .navbar-container .collapse form {
-        width: auto; } }
-    .header-index nav .navbar-container .collapse form button {
-      color: #ee6f07;
-      border: 1px solid #ee6f07;
-      transition: .3s;
-      font-family: 'poppins', sans-serif;
-      font-size: 2rem;
-      color: #fff;
-      font-size: 1.2rem; }
-      .header-index nav .navbar-container .collapse form button:hover {
-        border: 1px solid #ff3401; }
-
 .body__index {
   width: 100%;
   height: 100vh;
@@ -189,6 +97,7 @@
   background-attachment: fixed;
   background-size: cover; }
   .body__index .grid__container {
+    min-width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3.5rem 1fr 3.5rem;
@@ -196,11 +105,13 @@
     .body__index .grid__container .header {
       grid-area: header; }
     .body__index .grid__container .main__index {
-      grid-area: main; }
+      grid-area: main;
+      min-width: 100%; }
       .body__index .grid__container .main__index-MiddleRow {
         justify-content: space-between;
         align-content: center;
-        margin: 1rem auto; }
+        margin: 1rem auto;
+        min-width: 100%; }
         @media screen and (max-width: 576px) {
           .body__index .grid__container .main__index-MiddleRow {
             flex-direction: column;
@@ -293,23 +204,36 @@
 
 .carousel {
   width: 100%;
-  margin-top: 1rem; }
+  margin-top: 2rem; }
+  @media screen and (max-width: 600px) {
+    .carousel {
+      max-height: 60vh; } }
   .carousel .carousel-inner {
-    max-height: 600px; }
-    .carousel .carousel-inner .carousel-item {
-      max-height: 600px; }
-      .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-        font-family: 'Courgette', cursive;
-        font-size: 3rem;
-        color: #fff;
-        color: #ee6f07;
-        font-size: 3rem; }
-      .carousel .carousel-inner .carousel-item .carousel-caption p {
-        font-family: 'poppins', sans-serif;
-        font-size: 2rem;
-        color: #fff;
-        color: #fff;
-        font-size: 2.5rem; }
+    width: 100%; }
+    .carousel .carousel-inner .carousel-item img {
+      min-height: 100vh; }
+      @media screen and (max-width: 600px) {
+        .carousel .carousel-inner .carousel-item img {
+          min-height: 50vh; } }
+    .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+      font-family: 'poppins', sans-serif;
+      font-size: 2rem;
+      color: #fff;
+      color: #ee6f07;
+      font-size: 3rem;
+      font-weight: 600; }
+      @media screen and (max-width: 575px) {
+        .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+          font-size: 1.8rem; } }
+    .carousel .carousel-inner .carousel-item .carousel-caption p {
+      font-family: 'poppins', sans-serif;
+      font-size: 2rem;
+      color: #fff;
+      color: #fff;
+      font-size: 2.5rem; }
+      @media screen and (max-width: 575px) {
+        .carousel .carousel-inner .carousel-item .carousel-caption p {
+          font-size: 1.8rem; } }
 
 .carousel {
   background-color: #757575;
@@ -387,7 +311,8 @@
       grid-area: main; }
       .body__internal .grid__container .main__internal-row {
         margin-top: 2rem;
-        height: auto; }
+        height: auto;
+        min-width: 100%; }
         .body__internal .grid__container .main__internal-row .banner {
           width: 100%;
           height: 400px; }
