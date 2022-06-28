@@ -30,7 +30,6 @@
                     flex-direction: column;
                 }
                 .MiddleRow-Title {
-                    
                     h1 {
                         @include TitleText;
                         color: $PrimaryColor;
