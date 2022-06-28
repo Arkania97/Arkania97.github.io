@@ -29,16 +29,19 @@
                 @media screen and (max-width: 576px) {
                     flex-direction: column;
                 }
+
                 .MiddleRow-Title {
                     h1 {
                         @include SecondaryText;
                         color: $PrimaryColor;
                         display: none;
+
                         @media screen and (max-width: 576px) {
-                            display: block; 
+                            display: block;
                         }
-                     }
+                    }
                 }
+
                 .img-box-1 {
                     transition: .3s;
                     margin: 1rem 0;
@@ -54,10 +57,11 @@
                         position: absolute;
                         left: 8.5vw;
                         opacity: 1;
+
                         @media screen and (max-width: 576px) {
                             opacity: 0;
                         }
-                        
+
                     }
                 }
 
