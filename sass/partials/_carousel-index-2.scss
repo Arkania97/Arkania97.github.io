@@ -1,11 +1,16 @@
 .carousel {
+    min-width: 100%;
+    margin: 1rem auto;
     background-color: map-get($index-bg, background-color);
     background-image: map-get($index-bg, background-image);
     background-attachment: map-get($index-bg, background-attachment);
     background-size: map-get($index-bg, background-size);
-
+    @media screen and (max-width: 600px) {
+        max-height: 900px;
+    }
     .carousel-inner {
-        min-height: 600px;
+        min-width: 100%;
+        
         .carousel-heading-box {
             h4 {
                 @include TitleText;
@@ -30,7 +35,7 @@
                     border: 1px solid $RgbaFilter;
                     padding: 1rem;
                     border: 1px solid $PrimaryColor;
-
+                    
                     .card-body {
                         color: $TextColor;
                         @include SuperCenterY;
@@ -39,6 +44,9 @@
                             @include SecondaryText;
                             font-size: 2rem;
                             color: $PrimaryColor;
+                            @media screen and (max-width: 600px) {
+                                font-size: 1.3rem;
+                            }
                         }
 
                         .accordion {
@@ -63,6 +71,9 @@
                             .accordion-body {
                                 color: $TextColor;
                                 font-size: 1.3rem;
+                                @media screen and (max-width: 500px) {
+                                    font-size: 0.8rem;
+                                }
                             }
                         }
                     }
