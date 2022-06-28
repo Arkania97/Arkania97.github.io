@@ -109,8 +109,8 @@
           .body__index .grid__container .main__index-MiddleRow {
             flex-direction: column; } }
         .body__index .grid__container .main__index-MiddleRow .MiddleRow-Title h1 {
-          font-family: 'poppins', sans-serif;
-          font-size: 2rem;
+          font-family: 'Courgette', cursive;
+          font-size: 3rem;
           color: #fff;
           color: #ee6f07;
           display: none; }
@@ -202,8 +202,8 @@
     .carousel .carousel-inner .carousel-item {
       max-height: 600px; }
       .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-        font-family: 'Courgette', cursive;
-        font-size: 3rem;
+        font-family: 'poppins', sans-serif;
+        font-size: 2rem;
         color: #fff;
         color: #ee6f07;
         font-size: 3rem; }

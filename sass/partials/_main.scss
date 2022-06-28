@@ -32,7 +32,7 @@
 
                 .MiddleRow-Title {
                     h1 {
-                        @include SecondaryText;
+                        @include TitleText;
                         color: $PrimaryColor;
                         display: none;
 
