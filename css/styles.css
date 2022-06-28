@@ -359,9 +359,6 @@
       .body__artists .grid__container .main__artists-row {
         margin-top: 2rem;
         height: auto; }
-        @media screen and (max-width: 515px) {
-          .body__artists .grid__container .main__artists-row {
-            max-height: 200px; } }
         .body__artists .grid__container .main__artists-row .banner {
           width: 100%;
           height: 400px; }
