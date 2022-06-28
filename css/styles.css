@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   z-index: 1; }
   .header nav .navbar-container .navbar-toggler {
@@ -204,7 +205,8 @@
 
 .carousel {
   width: 100%;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  z-index: 0; }
   @media screen and (max-width: 600px) {
     .carousel {
       max-height: 60vh; } }
@@ -253,16 +255,20 @@
       color: #fff;
       color: #ee6f07;
       transition: .3s; }
-      .carousel .carousel-inner .carousel-heading-box h4:hover {
-        color: #ff3401; }
+      .carousel .carousel-inner .carousel-heading-box h4::after {
+        color: #ff3401;
+        content: '♫'; }
     .carousel .carousel-inner .carousel-item .carousel-card-container {
       display: flex;
-      justify-content: space-evenly; }
+      justify-content: center;
+      align-content: center; }
       .carousel .carousel-inner .carousel-item .carousel-card-container .card {
         background-color: transparent;
-        border: 1px solid rgba(35, 33, 33, 0.73);
-        padding: 1rem;
-        border: 1px solid #ee6f07; }
+        border: none;
+        padding: 0.5rem;
+        max-width: 50%; }
+        .carousel .carousel-inner .carousel-item .carousel-card-container .card img {
+          object-fit: contain; }
         .carousel .carousel-inner .carousel-item .carousel-card-container .card .card-body {
           color: #fff;
           display: flex;
@@ -274,7 +280,10 @@
             font-size: 2rem;
             color: #fff;
             font-size: 2rem;
-            color: #ee6f07; }
+            color: #ee6f07;
+            transition: .3s; }
+            .carousel .carousel-inner .carousel-item .carousel-card-container .card .card-body p:hover {
+              color: #fff; }
             @media screen and (max-width: 600px) {
               .carousel .carousel-inner .carousel-item .carousel-card-container .card .card-body p {
                 font-size: 1.3rem; } }
@@ -297,9 +306,11 @@
                   background-color: rgba(35, 33, 33, 0.73);
                   color: #ee6f07;
                   font-size: 1.5rem; }
+                  .carousel .carousel-inner .carousel-item .carousel-card-container .card .card-body .accordion .accordion-item h2 .accordion-button:hover {
+                    color: #fff; }
             .carousel .carousel-inner .carousel-item .carousel-card-container .card .card-body .accordion .accordion-body {
               color: #fff;
-              font-size: 1.3rem; }
+              font-size: 1.2rem; }
               @media screen and (max-width: 500px) {
                 .carousel .carousel-inner .carousel-item .carousel-card-container .card .card-body .accordion .accordion-body {
                   font-size: 0.8rem; } }

@@ -25,6 +25,7 @@
                             @include SecondaryText;
                             color: $TextColor;
                             transition: .3s;
+                            
                             &:hover {
                                 color: $PrimaryColor;
                             }
