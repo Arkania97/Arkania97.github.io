@@ -18,10 +18,10 @@
             grid-area: header;
         }
 
-        .main__container-artists {
+        .main__artists {
             grid-area: main;
 
-            .main__row {
+            &-row{
                 margin-top: 2rem;
                 height: auto;
 
@@ -29,7 +29,7 @@
                     max-height: 200px;
                 }
 
-                .main__banner {
+                .banner {
                     width: 100%;
                     height: 400px;
 
@@ -62,7 +62,7 @@
                 }
             }
 
-            .main__row2-artists {
+            &-row2 {
                 width: 100%;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
