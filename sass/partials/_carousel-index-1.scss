@@ -9,7 +9,7 @@
             max-height: 600px;
             .carousel-caption {
                 h5 {
-                    @include SecondaryText; 
+                    @include PrimaryText; 
                     color: $PrimaryColor;
                     font-size: 3rem;
                     
