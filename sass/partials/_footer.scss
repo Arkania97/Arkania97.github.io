@@ -3,14 +3,14 @@
     opacity: 0.8;
     min-height: 150px;
     width: 100%;
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 576px) {
         min-height: 260px;
     }
 
     p {
         color: $TextColor;
         @include SecondaryText;
-        @media screen and (max-width: 586px) {
+        @media screen and (max-width: 576px) {
             font-size: 1.5rem;
         }
     }
