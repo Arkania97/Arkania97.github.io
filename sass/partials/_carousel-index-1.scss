@@ -2,15 +2,13 @@
     width: 100%;
     margin-top: 2rem;
     z-index: 0;
-    @media screen and (max-width: 600px) {
-        max-height: 60vh;
-    }
+    
     .carousel-inner {
         width: 100%;
         .carousel-item {
             img {
                 min-height: 100vh;
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 768px) {
                     min-height: 50vh;
                 }
             }
@@ -20,7 +18,7 @@
                     color: $PrimaryColor;
                     font-size: 3rem;
                     font-weight: 600;
-                    @media screen and (max-width: 575px) {
+                    @media screen and (max-width: 576px) {
                         font-size: 1.8rem;
                     }
                 }
@@ -30,7 +28,7 @@
                     @include SecondaryText;
                     color: $TextColor;
                     font-size: 2.5rem;
-                    @media screen and (max-width: 575px) {
+                    @media screen and (max-width: 576px) {
                         font-size: 1.8rem;
                     }
                 }

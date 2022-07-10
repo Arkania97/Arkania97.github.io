@@ -158,6 +158,9 @@
   @media screen and (max-width: 576px) {
     .footer {
       min-height: 260px; } }
+  @media screen and (max-width: 375px) {
+    .footer {
+      min-height: 285px; } }
   .footer p {
     color: #fff;
     font-family: 'poppins', sans-serif;
@@ -197,7 +200,7 @@
     font-size: 2rem;
     color: #fff;
     transition: .3s; }
-    @media screen and (max-width: 364px) {
+    @media screen and (max-width: 375px) {
       .footer .nav .nav-item .nav-link {
         font-size: 1.5rem; } }
     .footer .nav .nav-item .nav-link:hover {
@@ -207,14 +210,11 @@
   width: 100%;
   margin-top: 2rem;
   z-index: 0; }
-  @media screen and (max-width: 600px) {
-    .carousel {
-      max-height: 60vh; } }
   .carousel .carousel-inner {
     width: 100%; }
     .carousel .carousel-inner .carousel-item img {
       min-height: 100vh; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 768px) {
         .carousel .carousel-inner .carousel-item img {
           min-height: 50vh; } }
     .carousel .carousel-inner .carousel-item .carousel-caption h5 {
@@ -224,7 +224,7 @@
       color: #ee6f07;
       font-size: 3rem;
       font-weight: 600; }
-      @media screen and (max-width: 575px) {
+      @media screen and (max-width: 576px) {
         .carousel .carousel-inner .carousel-item .carousel-caption h5 {
           font-size: 1.8rem; } }
     .carousel .carousel-inner .carousel-item .carousel-caption p {
@@ -233,7 +233,7 @@
       color: #fff;
       color: #fff;
       font-size: 2.5rem; }
-      @media screen and (max-width: 575px) {
+      @media screen and (max-width: 576px) {
         .carousel .carousel-inner .carousel-item .carousel-caption p {
           font-size: 1.8rem; } }
 
@@ -281,9 +281,9 @@
               right: 1.750rem; } }
           @media screen and (max-width: 425px) {
             .carousel .carousel-inner .carousel-item .carousel-card-container .card img {
-              min-width: 140px;
+              min-width: 130px;
               position: relative;
-              right: 1.6rem; } }
+              right: 1.750rem; } }
         .carousel .carousel-inner .carousel-item .carousel-card-container .card .card-body {
           color: #fff;
           display: flex;
