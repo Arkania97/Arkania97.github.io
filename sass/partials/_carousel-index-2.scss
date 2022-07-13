@@ -5,9 +5,9 @@
     background-image: map-get($index-bg, background-image);
     background-attachment: map-get($index-bg, background-attachment);
     background-size: map-get($index-bg, background-size);
-    @media screen and (max-width: 576px) {
+    /*@media screen and (max-width: 576px) {
         max-height: 900px;
-    }
+    }*/
     .carousel-inner {
         min-width: 100%;
         
@@ -40,16 +40,16 @@
                         display: inline;
                         width: 100%;
                         height: auto;
-                        @media screen and (max-width: 768px) {
+                        /*@media screen and (max-width: 768px) {
                             min-width: 270px;
                             position: relative;
                             right: 1.750rem;
-                        }
-                        @media screen and (max-width: 425px) {
+                        }*/
+                        /*@media screen and (max-width: 576px) {
                             min-width: 130px;
                             position: relative;
                             right: 1.750rem;
-                        }
+                        }*/
                     }
                     .card-body {
                         color: $TextColor;
@@ -63,9 +63,9 @@
                             &:hover {
                                 color: $TextColor;
                             }
-                            @media screen and (max-width: 576px) {
+                            /*@media screen and (max-width: 576px) {
                                 font-size: 1.3rem;
-                            }
+                            }*/
                         }
 
                         .accordion {
@@ -91,9 +91,9 @@
                             .accordion-body {
                                 color: $TextColor;
                                 font-size: 1.2rem;
-                                @media screen and (max-width: 576px) {
+                                /*@media screen and (max-width: 576px) {
                                     font-size: 0.8rem;
-                                }
+                                }*/
                             }
                         }
                     }
@@ -103,5 +103,25 @@
             }
 
         }
+    }
+}
+
+@media screen and (max-width: 768px) { /*tablet view*/
+    .card img {
+        min-width: 270px;
+        position: relative;
+        right: 1.750rem;
+    }
+}
+
+@media screen and (max-width: 576px) { /*smaller mobile devices view*/
+    .carousel {
+        max-height: 900px;
+    }
+    .card-body p {
+        font-size: 1.3rem;
+    }
+    .accordion-body {
+        font-size: 0.8rem;
     }
 }

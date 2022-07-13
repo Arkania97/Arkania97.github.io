@@ -51,9 +51,9 @@
                         min-height: 30px;
                         @include SuperCenter;
                         align-items: center;
-                        @media screen and (max-width: 992px) {
+                        /*@media screen and (max-width: 768px) {
                             justify-content: start;
-                        }
+                        }*/
                         
                         a > i {
                             color: $TextColor;
@@ -76,11 +76,11 @@
                             justify-content: center;
                             margin: 0 1rem;
                             transition: .3s;
-                            @media screen and (max-width: 992px) {
+                            /*@media screen and (max-width: 768px) {
                                 flex-direction: row;
                                 display: inline-flex;
                                 max-width: 200px;
-                            }
+                            }*/
                             a {
                                 @include SecondaryText;
                                 font-size: 1.2rem;
@@ -98,9 +98,9 @@
                 }
                 form {
                     min-width: 250px;
-                    @media screen and (max-width: 992px) {
+                    /*@media screen and (max-width: 768px) {
                         width: auto;
-                    }
+                    }*/
                     button {
                         color: $PrimaryColor;
                         border: 1px solid $PrimaryColor;
@@ -115,4 +115,19 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 768px) { /*tablet view*/
+    .socialmedia-box {
+        justify-content: start;
+    }
+    .nav-btn {
+        flex-direction: row;
+        display: inline-flex;
+        max-width: 200px;
+    }
+    form {
+        width: auto;
+    }
+
 }

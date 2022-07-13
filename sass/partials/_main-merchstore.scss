@@ -60,10 +60,10 @@
                 grid-template-rows: repeat(2, 600px);
                 grid-gap: 5px;
 
-                @media screen and (max-width:992px) {
+                /*@media screen and (max-width:768px) {
                     @include SuperCenter;
                     flex-wrap: wrap;
-                }
+                }*/
                     .card {
                         background-color: $RgbaFilter;
                         color: $TextColor;
@@ -112,5 +112,11 @@
         .footer {
             grid-area: footer;
         }
+    }
+}
+@media screen and (max-width:768px) { /*tablet view*/
+    .main__internal-row2 {
+        @include SuperCenter;
+        flex-wrap: wrap;
     }
 }
