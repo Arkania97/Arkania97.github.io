@@ -160,7 +160,7 @@
       min-height: 260px; } }
   @media screen and (max-width: 375px) {
     .footer {
-      min-height: 285px; } }
+      min-height: 300px; } }
   .footer p {
     color: #fff;
     font-family: 'poppins', sans-serif;
