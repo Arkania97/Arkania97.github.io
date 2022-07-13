@@ -56,7 +56,7 @@
 
                     &:hover::after {
                         content: 'Apparel Section';
-                        @include TerciaryText;
+                        @include TitleText;
                         position: absolute;
                         left: 8.5vw;
                         opacity: 1;

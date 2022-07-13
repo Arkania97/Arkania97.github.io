@@ -134,7 +134,7 @@
             transform: scale(1.1); }
           .body__index .grid__container .main__index-MiddleRow .img-box-1:hover::after, .body__index .grid__container .main__index-MiddleRow .img-box-2:hover::after, .body__index .grid__container .main__index-MiddleRow .img-box-3:hover::after {
             content: 'Apparel Section';
-            font-family: 'Potta One', cursive;
+            font-family: 'Courgette', cursive;
             font-size: 3rem;
             color: #fff;
             position: absolute;
