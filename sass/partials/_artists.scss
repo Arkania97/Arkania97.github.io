@@ -67,7 +67,7 @@
                 grid-template-rows: repeat(2, 800px);
                 grid-gap: 5px;
 
-                @media screen and (max-width:768px) { /*tablet view*/
+                @media screen and (max-width:768px) { 
                     @include SuperCenter;
                     flex-wrap: wrap;
                 }
